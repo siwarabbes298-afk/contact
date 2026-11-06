@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fast Food - Contact</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contactez-nous</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Formulaire de contact</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            
+            <fieldset>
+                <legend>1 – Vos coordonnées</legend>
+
+                <label for="nom">Nom* :</label>
+                <input type="text" id="nom" name="nom" required  maxlength="50" placeholder="Votre nom">
+                <br><br>
+
+                <label for="prenom">Prénom* :</label>
+                <input type="text" id="prenom" name="prenom" required maxlength="50" placeholder="Votre prénom">
+                <br><br>
+
+                <label for="naissance">Date de naissance :</label>
+                <input type="date" id="naissance" name="naissance">
+                <br><br>
+
+                <label for="email">Adresse email* :</label>
+                <input type="email" id="email" name="email" required placeholder="exemple@email.com">
+                <br><br>
+
+                <label for="site">Site web :</label>
+                <input type="url" id="site" name="site" value="http://www." placeholder="https://monsite.com">
+                <br><br>
+
+                <label for="mdp">Code secret :</label>
+                <input type="password" id="mdp" name="mdp" minlength="6" maxlength="20">
+                <br><br>
+
+                <p>Genre :</p>
+                <label for="homme">Homme</label>
+                <input type="radio" id="homme" name="genre" value="Homme" checked>
+                <label for="femme">Femme</label>
+                <input type="radio" id="femme" name="genre" value="Femme">
+                <br><br>
+
+                <label for="pays">Pays :</label>
+                <select id="pays" name="pays">
+                    <option>Tunisie</option>
+                    <option>France</option>
+                    <option>Algérie</option>
+                    <option>Maroc</option>
+                    <option>Autre</option>
+                </select>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>2 – Informations complémentaires</legend>
+
+                <label for="tel">Téléphone :</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{8}" placeholder="12345678">
+                <br><br>
+
+                <label for="adresse">Adresse postale :</label>
+                <input type="text" id="adresse" name="adresse" placeholder="Votre adresse">
+                <br><br>
+
+                <label for="cp">Code postal :</label>
+                <input type="text" id="cp" name="cp" value="1000" maxlength="4">
+                <br><br>
+
+                <label for="semestre">Semestre :</label>
+                <select id="semestre" name="semestre">
+                    <option>S1</option>
+                    <option>S2</option>
+                    <option>S3</option>
+                    <option>S4</option>
+                </select>
+                <br><br>
+
+                <label for="region">Région préférée :</label>
+                <select id="region" name="region">
+                    <option>Tunis</option>
+                    <option>Sousse</option>
+                    <option>Sfax</option>
+                    <option>Djerba</option>
+                    <option>Tozeur</option>
+                </select>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>3 – Goûts et centres d'intérêt</legend>
+
+                <p>Centres d'intérêt :</p>
+                <label for="culture">Culture</label>
+                <input type="checkbox" id="culture" name="interet" value="Culture" checked>
+                 <label for="gastronomie">Gastronomie</label>
+                <input type="checkbox" id="gastronomie" name="interet" value="Gastronomie">
+               <label for="plage">Plage</label>
+                <input type="checkbox" id="plage" name="interet" value="Plage">
+                <label for="desert">Désert</label>
+                <input type="checkbox" id="desert" name="interet" value="Désert">
+                <label for="histoire">Histoire</label>
+                <input type="checkbox" id="histoire" name="interet" value="Histoire">
+                <br><br>
+
+                <label for="niveau">Niveau en HTML :</label>
+                <input type="range" id="niveau" name="niveau" min="0" max="100" step="10">
+                <br><br>
+
+                <label for="note">Note de satisfaction :</label>
+                <input type="number" id="note" name="note" min="1" max="10" step="1">
+                <br><br>
+
+                <label for="message">Message / Commentaire :</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="40"
+                    placeholder="Écrivez votre message ici..."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Votre commande</legend>
+
+                <p>Type de commande :</p>
+                <input type="radio" id="surplace" name="commande" value="surplace">
+                <label for="surplace">Sur place</label>
+                <input type="radio" id="livraison" name="commande" value="livraison">
+                <label for="livraison">Livraison</label>
+                <br><br>
+
+                <p>Que souhaitez-vous commander ?</p>
+                <input type="checkbox" id="burger" name="plat" value="burger">
+                <label for="burger">Burger</label>
+                <input type="checkbox" id="pizza" name="plat" value="pizza">
+                <label for="pizza">Pizza</label>
+                <input type="checkbox" id="sandwich" name="plat" value="sandwich">
+                <label for="sandwich">Sandwich</label>
+                <br><br>
+
+                <label for="boisson">Boisson :</label>
+                <select id="boisson" name="boisson">
+                    <option>Coca-Cola</option>
+                    <option>Fanta</option>
+                    <option>Eau</option>
+                </select>
+            </fieldset>
+
+            <!-- Groupe 4 -->
+            <fieldset>
+                <legend>4 – Photo</legend>
+
+                <label for="photo">Photo de profil :</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+                <br><br>
+
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Effacer">
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>2026 Fast Food</p>
+    </footer>
+
+</body>
+
+</html>
